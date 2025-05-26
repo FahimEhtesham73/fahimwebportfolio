@@ -108,7 +108,7 @@ export default function HomePage() {
               size="lg"
               className="shadow-lg hover:shadow-primary/40 transform hover:scale-105 transition-all duration-300 animate-fadeInUp animation-delay-900 w-full sm:w-auto"
             >
-              <Link href="/resume.pdf" target="_blank" download="MD_Ehtesamul_Haque_Fahim_Resume.pdf">
+              <Link href="https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/FahimEhtesham_CV.pdf?updatedAt=1748254112798" target="_blank" download="FahimEhtesham_CV.pdf">
                 Download Resume <Download className="ml-2 h-5 w-5" />
               </Link>
             </Button>
