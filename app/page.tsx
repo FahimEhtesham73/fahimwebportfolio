@@ -69,7 +69,7 @@ export default function HomePage() {
             Hello, I&apos;m
           </p>
           <h1
-            className="text-5xl md:text-7xl font-bold mb-6 text-neon-glow animate-fadeInUp animation-delay-300"
+            className="text-5xl md:text-6xl font-bold mb-6 text-neon-glow animate-fadeInUp animation-delay-300"
           >
             <TypingText
               text="MD. Ehtesamul Haque Fahim"
@@ -82,7 +82,7 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl text-neon-glow mb-8 max-w-3xl mx-auto animate-fadeInUp animation-delay-500">
             Full Stack Software Developer
           </p>
-          <div className="space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="space-y-4 sm:space-y-0 sm:space-x-4" style={{ marginTop: '150px' }}>
             <Button
               asChild
               size="lg"
