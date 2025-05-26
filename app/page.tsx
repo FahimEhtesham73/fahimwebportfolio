@@ -54,7 +54,7 @@ export default function HomePage() {
           <div className="absolute top-1/2 right-1/5 w-16 h-16 bg-primary/20 rounded-full animate-subtle-float animation-delay-1000"></div>
         </div>
 
-        <div className="relative z-10" style={{ marginTop: '40px', marginBottom: '40px' }}>
+        <div className="relative z-10" style={{ marginTop: '-40px', marginBottom: '100px' }}>
           <Image
             src="https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/fahimPro.png?updatedAt=1748247154426"
             alt="MD. Ehtesamul Haque Fahim"
