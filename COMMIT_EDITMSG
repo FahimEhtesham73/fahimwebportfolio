@@ -1,0 +1,17 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is ahead of 'fahimwebport/master' by 10 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   .next/app-build-manifest.json
+#	modified:   .next/server/app-paths-manifest.json
+#	modified:   .next/server/next-font-manifest.js
+#	modified:   .next/server/next-font-manifest.json
+#	modified:   .next/server/server-reference-manifest.js
+#	modified:   .next/server/server-reference-manifest.json
+#	modified:   .next/trace
+#
