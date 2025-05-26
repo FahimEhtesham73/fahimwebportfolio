@@ -16,7 +16,7 @@ export const projectsData: Project[] = [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/f.png?updatedAt=1748247785016',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/i.png?updatedAt=1748247785104',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/j.png?updatedAt=1748247784197',
-      
+
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/d.png?updatedAt=1748247784981',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/e.png?updatedAt=1748247784939',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/k.png?updatedAt=1748247789112',
@@ -46,8 +46,52 @@ export const projectsData: Project[] = [
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'AWS Lambda'],
     githubUrl: 'https://github.com/FahimEhtesham73/office-portal', // Replace with actual repo link
     liveUrl: 'https://officeportal.fahimehtesham.com', // Placeholder - replace with actual link
-  }
-  ,
+  },
+  {
+    slug: 'rnd_portal',
+    title: 'R&D Portal',
+    description: 'A Research and Development portal for managing projects, tracking progress, and facilitating collaboration among team members.',
+    longDescription: 'The R&D Portal is a comprehensive web application designed to streamline the research and             development process within an organization. Built with the MERN stack, it provides a platform for teams to manage projects, track progress, and collaborate effectively. Key features include project creation and management, task assignment, progress tracking, and team communication tools. The portal supports role-based access control to ensure that sensitive information is only accessible to authorized users. It also includes data visualization tools to help teams analyze project metrics and outcomes. This portal aims to enhance productivity and innovation by providing a centralized hub for all R&D activities.',
+    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-00.png?updatedAt=1748258489456',
+    screenshots: [
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-16-35.png?updatedAt=1748258493473',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-00.png?updatedAt=1748258489456',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-19.png?updatedAt=1748258489529',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-30.png?updatedAt=1748258489285',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-25.png?updatedAt=1748258489433',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-35.png?updatedAt=1748258489166',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-18-19.png?updatedAt=1748258489053',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-15.png?updatedAt=1748258489281',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/R&D_Portal/Screenshot%20from%202025-05-26%2009-17-22.png?updatedAt=1748258489146'
+
+    ],
+    imageHint: 'research and development dashboard',
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT Authentication'],
+    githubUrl: ' https://github.com/FahimEhtesham73/office-portal',
+    liveUrl: 'https://rnp.fahimehtesham.com',
+  },
+ {
+    slug: 'Next Gari',
+    title: 'Next Gari',
+    description: 'A Next.js-based e-commerce platform for buying and selling used cars, featuring advanced search filters and user-friendly interfaces.',
+    longDescription: 'Next Gari is a modern e-commerce platform built with Next.js, designed specifically for the used car market. It allows users to buy and sell vehicles with ease, featuring advanced search filters for make, model, price range, and location. The platform includes user authentication, profile management, and a secure payment gateway for transactions. Sellers can create detailed listings with images and descriptions, while buyers can save their favorite listings and contact sellers directly. The responsive design ensures a seamless experience across devices, making it easy for users to navigate and find their ideal vehicle.',
+    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-33.png?updatedAt=1748259387232',
+    screenshots: [
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-33.png?updatedAt=1748259387232',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-37.png?updatedAt=1748259382448',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-09.png?updatedAt=1748259381191',
+
+     ' https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-45.png?updatedAt=1748259381155',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-20.png?updatedAt=1748259381375',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-16.png?updatedAt=1748259381690',
+
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-28.png?updatedAt=1748259381487',
+    ],
+    imageHint: 'used car marketplace',
+    techStack: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/FahimEhtesham73/next-gari',
+    liveUrl: 'https://nextgari.fahimehtesham.com', // Placeholder - replace with actual link
+    },
   {
     slug: 'job-portal',
     title: 'Job Portal',
