@@ -48,7 +48,7 @@ export const projectsData: Project[] = [
     liveUrl: 'https://officeportal.fahimehtesham.com', // Placeholder - replace with actual link
   },
    {
-    slug: 'Next Gari',
+    slug: 'next-gari',
     title: 'Next Gari',
     description: 'A Next.js-based e-commerce platform for buying and selling used cars, featuring advanced search filters and user-friendly interfaces.',
     longDescription: 'Next Gari is a modern e-commerce platform built with Next.js, designed specifically for the used car market. It allows users to buy and sell vehicles with ease, featuring advanced search filters for make, model, price range, and location. The platform includes user authentication, profile management, and a secure payment gateway for transactions. Sellers can create detailed listings with images and descriptions, while buyers can save their favorite listings and contact sellers directly. The responsive design ensures a seamless experience across devices, making it easy for users to navigate and find their ideal vehicle.',
