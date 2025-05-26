@@ -47,6 +47,28 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/FahimEhtesham73/office-portal', // Replace with actual repo link
     liveUrl: 'https://officeportal.fahimehtesham.com', // Placeholder - replace with actual link
   },
+   {
+    slug: 'Next Gari',
+    title: 'Next Gari',
+    description: 'A Next.js-based e-commerce platform for buying and selling used cars, featuring advanced search filters and user-friendly interfaces.',
+    longDescription: 'Next Gari is a modern e-commerce platform built with Next.js, designed specifically for the used car market. It allows users to buy and sell vehicles with ease, featuring advanced search filters for make, model, price range, and location. The platform includes user authentication, profile management, and a secure payment gateway for transactions. Sellers can create detailed listings with images and descriptions, while buyers can save their favorite listings and contact sellers directly. The responsive design ensures a seamless experience across devices, making it easy for users to navigate and find their ideal vehicle.',
+    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-33.png?updatedAt=1748259387232',
+    screenshots: [
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-33.png?updatedAt=1748259387232',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-37.png?updatedAt=1748259382448',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-09.png?updatedAt=1748259381191',
+
+     ' https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-45.png?updatedAt=1748259381155',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-20.png?updatedAt=1748259381375',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-16.png?updatedAt=1748259381690',
+
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-28.png?updatedAt=1748259381487',
+    ],
+    imageHint: 'used car marketplace',
+    techStack: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/FahimEhtesham73/next-gari',
+    liveUrl: 'https://nextgari.fahimehtesham.com', // Placeholder - replace with actual link
+    },
   {
     slug: 'rnd_portal',
     title: 'R&D Portal',
@@ -70,28 +92,7 @@ export const projectsData: Project[] = [
     githubUrl: ' https://github.com/FahimEhtesham73/office-portal',
     liveUrl: 'https://rnp.fahimehtesham.com',
   },
- {
-    slug: 'Next Gari',
-    title: 'Next Gari',
-    description: 'A Next.js-based e-commerce platform for buying and selling used cars, featuring advanced search filters and user-friendly interfaces.',
-    longDescription: 'Next Gari is a modern e-commerce platform built with Next.js, designed specifically for the used car market. It allows users to buy and sell vehicles with ease, featuring advanced search filters for make, model, price range, and location. The platform includes user authentication, profile management, and a secure payment gateway for transactions. Sellers can create detailed listings with images and descriptions, while buyers can save their favorite listings and contact sellers directly. The responsive design ensures a seamless experience across devices, making it easy for users to navigate and find their ideal vehicle.',
-    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-33.png?updatedAt=1748259387232',
-    screenshots: [
-      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-33.png?updatedAt=1748259387232',
-      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-37.png?updatedAt=1748259382448',
-      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-09.png?updatedAt=1748259381191',
 
-     ' https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-45.png?updatedAt=1748259381155',
-      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-20.png?updatedAt=1748259381375',
-      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-16.png?updatedAt=1748259381690',
-
-      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-28.png?updatedAt=1748259381487',
-    ],
-    imageHint: 'used car marketplace',
-    techStack: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/FahimEhtesham73/next-gari',
-    liveUrl: 'https://nextgari.fahimehtesham.com', // Placeholder - replace with actual link
-    },
   {
     slug: 'job-portal',
     title: 'Job Portal',
