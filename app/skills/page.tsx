@@ -1,5 +1,5 @@
 // src/app/skills/page.tsx
-"use client"; 
+"use client";
 import React from 'react';
 import SectionWrapper from '@/components/shared/SectionWrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -35,24 +35,49 @@ const TypeScriptLogo = ({ className }: { className?: string }) => (
 const TailwindCssLogo = ({ className }: { className?: string }) => (
   <img src="/tailwind-css-2.svg" alt="Tailwind CSS Logo" className={cn("h-10 w-10", className)} />
 );
-const MaterialUiLogo = ({ className }: { className?: string }) => ( 
+const MaterialUiLogo = ({ className }: { className?: string }) => (
   <img src="/material-ui-1.svg" alt="Material UI Logo" className={cn("h-10 w-10", className)} />
 );
 
 const BootstrapLogo = ({ className }: { className?: string }) => (
   <img src="/bootstrap-5-1.svg" alt="Bootstrap Logo" className={cn("h-10 w-10", className)} />
 );
-
-const ReduxLogo = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className={cn("h-10 w-10", className)}>
-    <g transform="translate(50,50)" fill="currentColor">
-      <path d="M0-38c17.35,0,27.88,12.24,27.88,28.49,0,16.06-10.72,28.09-27.88,28.09S-27.88,8.12-27.88-9.51C-27.88-25.76-17.35-38,0-38Zm0,8.36c-10.72,0-19.52,8.55-19.52,19.73s8.8,20.13,19.52,20.13,19.52-8.95,19.52-20.13S10.72-29.64,0-29.64Z"/>
-      <path d="M0-24.92c10.72,0,19.52,8.55,19.52,19.73s-8.8,20.13-19.52,20.13S-19.52,3.36-19.52-7.82c0-11.18,8.8-17.1,19.52-17.1Zm0,31.73c5.2,0,9.56-4.17,9.56-9.35s-4.36-9.35-9.56-9.35-9.56,4.17-9.56,9.35S-5.2,6.81,0,6.81Z" transform="rotate(60)"/>
-      <path d="M0-24.92c10.72,0,19.52,8.55,19.52,19.73s-8.8,20.13-19.52,20.13S-19.52,3.36-19.52-7.82c0-11.18,8.8-17.1,19.52-17.1Zm0,31.73c5.2,0,9.56-4.17,9.56-9.35s-4.36-9.35-9.56-9.35-9.56,4.17-9.56,9.35S-5.2,6.81,0,6.81Z" transform="rotate(-60)"/>
-    </g>
-  </svg>
+const ExpressJSLogo = ({ className }: { className?: string }) => (
+  <img src="/Express.svg" alt="Express Logo" className={cn("h-10 w-10", className)} />
 );
 
+const ReduxLogo = ({ className }: { className?: string }) => (
+  <img src="/redux.svg" alt="redux Logo" className={cn("h-10 w-10", className)} />
+);
+
+const ContextApiLogo = ({ className }: { className?: string }) => (
+  <img src='/FastAPI.svg' alt='Context API Logo' className={cn("h-10 w-10", className)} />
+)
+
+const MongoDBlogo = ({ className }: { className?: string }) => (
+  <img src='/MongoDB.svg' alt='MongoDB Logo' className={cn("h-10 w -10", className)} />
+)
+const MySQLlogo = ({ className }: { className?: string }) => (
+  <img src='/MySQL.svg' alt='MySQLLogo' className={cn("h-10 w -10", className)} />
+)
+
+const GitBranchLogo = ({ className }: { className?: string }) => (
+  <img src='/Git.svg' alt='gitlogo' className={cn("h-10 w -10", className)} />
+)
+const VScodeLogo = ({ className }: { className?: string }) => (
+  <img src='/vs.svg' alt='vs code logo' className={cn("h-10 w -10", className)} />
+)
+
+const RestApiLogo = ({ className }: { className?: string }) => (
+  <img src='/FastAPI.svg' alt='rest API Logo' className={cn("h-10 w-10", className)} />
+)
+const JSONlogo = ({ className }: { className?: string }) => (
+  <img src='/FastAPI.svg' alt='JSONlogo' className={cn("h-10 w-10", className)} />
+)
+
+const JwtLogo = ({ className }: { className?: string }) => (
+  <img src='/icons8-jwt-480.svg' alt='jwtlogo' className={cn("h-10 w-10", className)} />
+)
 // Skill interface and dat
 
 interface Skill {
@@ -77,8 +102,8 @@ const skillData: SkillCategory[] = [
       { name: 'CSS3', customIcon: <Css3Logo /> },
       { name: 'JavaScript (ES6+)', customIcon: <JavaScriptLogo /> },
       { name: 'TypeScript', customIcon: <TypeScriptLogo /> },
-      { name: 'Bootstrap', customIcon: <BootstrapLogo /> }, 
-      { name: 'Material-UI', customIcon:  <MaterialUiLogo /> },
+      { name: 'Bootstrap', customIcon: <BootstrapLogo /> },
+      { name: 'Material-UI', customIcon: <MaterialUiLogo /> },
       { name: 'Tailwind CSS', customIcon: <TailwindCssLogo /> },
     ],
   },
@@ -87,89 +112,90 @@ const skillData: SkillCategory[] = [
     icon: Cpu,
     skills: [
       { name: 'Node.js', customIcon: <NodeJsLogo /> },
-      { name: 'Express.js', icon: Settings }, 
+      { name: 'Express.js', customIcon: <ExpressJSLogo /> },
     ],
   },
   {
     name: 'State Management',
     icon: Layers,
     skills: [
-      { name: 'Redux & Redux Toolkit', customIcon: <ReduxLogo /> }, 
-      { name: 'Context API', icon: Layers },
+      { name: 'Redux & Redux Toolkit', customIcon: <ReduxLogo /> },
+      { name: 'Context API', customIcon: <ContextApiLogo /> },
     ],
   },
   {
     name: 'Databases',
     icon: Database,
     skills: [
-      { name: 'MongoDB', icon: Database },
-      { name: 'MySQL', icon: Database },
+      { name: 'MongoDB', customIcon: <MongoDBlogo /> },
+      { name: 'MySQL', customIcon: <MySQLlogo /> },
     ],
   },
   {
     name: 'Version Control & Tools',
     icon: GitBranch,
     skills: [
-      { name: 'Git & GitHub', icon: GitBranch },
-      { name: 'Visual Studio Code', icon: Terminal }, 
+      { name: 'Git & GitHub', customIcon: <GitBranchLogo /> },
+      { name: 'Visual Studio Code', customIcon: <VScodeLogo /> },
     ],
   },
   {
     name: 'APIs & Authentication',
     icon: Link2,
     skills: [
-      { name: 'REST APIs', icon: Link2 },
-      { name: 'JSON', icon: Code }, 
-      { name: 'JWT Authentication', icon: ShieldCheck },
+      { name: 'REST APIs', customIcon: <RestApiLogo /> },
+      { name: 'JSON', customIcon: <JSONlogo /> },
+      { name: 'JWT Authentication', customIcon: <JwtLogo /> },
     ],
   },
   {
     name: 'Deployment & Cloud',
     icon: Cloud,
     skills: [
-      { name: 'AWS EC2', icon: Cloud },
-      { name: 'AWS Lambda', icon: Cloud },
-      { name: 'AWS S3 Bucket', icon: Cloud },
-      { name: 'AWS DocumentDB', icon: Cloud },
-      { name: 'AWS CloudFront', icon: Cloud },
-      { name: 'Netlify', icon: Cloud },
-      { name: 'Heroku', icon: Cloud },
-      { name: 'cPanel', icon: Settings },
-      { name: 'Vercel', icon: Cloud },
-      { name: 'Cloudinary', icon: Cloud },
+      { name: 'AWS EC2', customIcon: <img src="/AWS.svg" alt="AWS EC2" className="h-10 w-10" /> },
+      { name: 'AWS Lambda', customIcon: <img src="/AWS.svg" alt="AWS Lambda" className="h-10 w-10" /> },
+      { name: 'AWS S3 Bucket', customIcon: <img src="/AWS.svg" alt="AWS S3 Bucket" className="h-10 w-10" /> },
+      { name: 'AWS DocumentDB', customIcon: <img src="/AWS.svg" alt="AWS DocumentDB" className="h-10 w-10" /> },
+      { name: 'AWS CloudFront', customIcon: <img src="/AWS.svg" alt="AWS CloudFront" className="h-10 w-10" /> },
+      { name: 'Netlify', customIcon: <img src="/netlify-svgrepo-com.svg" alt="Netlify" className="h-10 w-10" /> },
+      { name: 'Heroku', customIcon: <img src="/Heroku.svg" alt="Heroku" className="h-10 w-10" /> },
+      { name: 'cPanel', customIcon: <img src="/cpanel-svgrepo-com.svg" alt="cPanel" className="h-10 w-10" /> },
+      { name: 'Vercel', customIcon: <img src="/Vercel.svg" alt="Vercel" className="h-10 w-10" /> },
+      { name: 'Cloudinary', customIcon: <img src="/cloudinary-svgrepo-com.svg" alt="Cloudinary" className="h-10 w-10" /> },
     ],
   },
   {
     name: 'Operating Systems',
     icon: Terminal,
     skills: [
-      { name: 'Linux (Ubuntu)', icon: Terminal },
-      { name: 'Windows', icon: Terminal }, 
+      { name: 'Linux (Ubuntu)', customIcon: <img src="/Linux.svg" alt="Ubuntu" className="h-10 w-10" /> },
+      { name: 'Windows', customIcon: <img src="/Windows11.svg" alt="Windows" className="h-10 w-10" /> },
     ],
   },
   {
     name: 'Digital Marketing',
     icon: TrendingUp,
     skills: [
-      { name: 'Website Audit', icon: Search },
-      { name: 'SEO & Keyword Research', icon: Search },
-      { name: 'Google Analytics', icon: TrendingUp },
-      { name: 'Social Media Marketing', icon: Users },
-      { name: 'Email Marketing', icon: Mail },
-      { name: 'Wordpress', icon: Palette }, 
+      { name: 'Website Audit', customIcon: <img src="/audit-check-glass-svgrepo-com.svg" alt="Audit" className="h-10 w-10" /> },
+      { name: 'SEO & Keyword Research', customIcon: <img src="/seo-1-svgrepo-com.svg" alt="SEO" className="h-10 w-10" /> },
+      { name: 'Google Analytics', customIcon: <img src="/analytics-chart-diagram-svgrepo-com.svg" alt="Google Analytics" className="h-10 w-10" /> },
+      { name: 'Social Media Marketing', customIcon: <img src="/social-network-svgrepo-com.svg" alt="Social Media" className="h-10 w-10" /> },
+      { name: 'Email Marketing', customIcon: <img src="/email-part-2-svgrepo-com.svg" alt="Email" className="h-10 w-10" /> },
+      { name: 'Wordpress', customIcon: <img src="/wordpress-color-svgrepo-com.svg" alt="Wordpress" className="h-10 w-10" /> },
     ],
   },
   {
     name: 'Soft Skills',
     icon: Users,
     skills: [
-      { name: 'Problem Solving & Logical Thinking', icon: Lightbulb },
-      { name: 'Professional Communication', icon: Briefcase },
-      { name: 'Team Collaboration', icon: Users },
-      { name: 'Adaptability & Facing Challenges', icon: ShieldCheck },
-      { name: 'Multitasking & Punctuality', icon: CheckCircle },
+      { name: 'Problem Solving & Logical Thinking', customIcon: <img src="/think-svgrepo-com.svg" alt="Problem Solving" className="h-10 w-10" /> },
+      { name: 'Professional Communication', customIcon: <img src="/communication-5-svgrepo-com.svg" alt="Communication" className="h-10 w-10" /> },
+      { name: 'Team Collaboration', customIcon: <img src="/teamwork-svgrepo-com.svg" alt="Teamwork" className="h-10 w-10" /> },
+      { name: 'Adaptability & Facing Challenges', customIcon: <img src="/resilience-svgrepo-com.svg" alt="Adaptability" className="h-10 w-10" /> },
+      { name: 'Multitasking & Punctuality', customIcon: <img src="/professor.svg" alt="Punctuality" className="h-10 w-10" /> },
     ],
-  },
+  }
+
 ];
 
 export default function SkillsPage() {
@@ -183,11 +209,11 @@ export default function SkillsPage() {
       </div>
 
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary animate-fadeInUp relative z-10">My Expertise</h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
         {skillData.map((category, categoryIndex) => (
-          <Card 
-            key={category.name} 
+          <Card
+            key={category.name}
             className="bg-card/80 backdrop-blur-sm shadow-xl hover:shadow-primary/30 transition-all duration-300 animate-fadeInUp group"
             style={{ animationDelay: `${categoryIndex * 0.1 + 0.2}s` }}
           >
@@ -198,8 +224,8 @@ export default function SkillsPage() {
             <CardContent>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <div 
-                    key={skill.name} 
+                  <div
+                    key={skill.name}
                     className="flex flex-col items-center justify-center p-3 rounded-lg bg-card/50 hover:bg-primary/10 transition-all duration-300 transform hover:scale-105 cursor-pointer animate-fadeInUp"
                     style={{ animationDelay: `${(categoryIndex * 0.1) + (skillIndex * 0.05) + 0.3}s` }}
                     title={skill.name}
