@@ -136,22 +136,21 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
       message: "Your message has been sent successfully! You should receive a confirmation email shortly.",
     };
 
-  } catch (error) {
-    console.error('Error sending email:', error);
+  } catch (error: any) {
+  console.error("Error sending email:", error);
 
-    // More specific error messages
-    let errorMessage = "Failed to send message. Please try again later.";
+  let errorMessage = "Failed to send message. Please try again later.";
 
-    if (error === 'EAUTH') {
-      errorMessage = "Authentication failed. Please check your email configuration.";
-    } else if (error === 'ECONNECTION') {
-      errorMessage = "Connection failed. Please check your internet connection.";
-    }
-
-    return {
-      success: false,
-      message: errorMessage,
-    };
-
+  if (error.code === 'EAUTH') {
+    errorMessage = "Authentication failed. Please check your Gmail App Password.";
+  } else if (error.code === 'ECONNECTION') {
+    errorMessage = "Connection failed. Gmail SMTP may be blocking Netlify.";
   }
+
+  return {
+    success: false,
+    message: errorMessage,
+  };
+}
+
 }
