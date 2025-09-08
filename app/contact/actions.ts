@@ -30,6 +30,14 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
   }
 
   const { name, email, message } = validationResult.data;
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_APP_PASSWORD) {
+    console.error('Missing email configuration environment variables');
+    return {
+      success: false,
+      message: "Server configuration error. Please try again later.",
+    };
+  }
+
 
   try {
     // Create transporter using Gmail SMTP
@@ -39,10 +47,12 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
       port: 587,
       secure: false,
       auth: {
-        user: process.env.EMAIL_USER || 'fahimEhtesham73@gmail.com',
-        pass: process.env.EMAIL_APP_PASSWORD, // Gmail App Password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_APP_PASSWORD,
       },
     });
+    await transporter.verify();
+
 
     // Email to you (receiving the contact form submission)
     const mailOptions = {
@@ -128,9 +138,20 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
 
   } catch (error) {
     console.error('Error sending email:', error);
+
+    // More specific error messages
+    let errorMessage = "Failed to send message. Please try again later.";
+
+    if (error === 'EAUTH') {
+      errorMessage = "Authentication failed. Please check your email configuration.";
+    } else if (error === 'ECONNECTION') {
+      errorMessage = "Connection failed. Please check your internet connection.";
+    }
+
     return {
       success: false,
-      message: "Failed to send message. Please check your internet connection and try again later.",
+      message: errorMessage,
     };
+
   }
 }
