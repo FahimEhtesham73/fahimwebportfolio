@@ -51,6 +51,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
         pass: process.env.EMAIL_APP_PASSWORD,
       },
     });
+
     await transporter.verify();
 
 
@@ -137,20 +138,20 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
     };
 
   } catch (error: any) {
-  console.error("Error sending email:", error);
+    console.error("Error sending email:", error);
 
-  let errorMessage = "Failed to send message. Please try again later.";
+    let errorMessage = "Failed to send message. Please try again later.";
 
-  if (error.code === 'EAUTH') {
-    errorMessage = "Authentication failed. Please check your Gmail App Password.";
-  } else if (error.code === 'ECONNECTION') {
-    errorMessage = "Connection failed. Gmail SMTP may be blocking Netlify.";
+    if (error.code === 'EAUTH') {
+      errorMessage = "Authentication failed. Please check your Gmail App Password.";
+    } else if (error.code === 'ECONNECTION') {
+      errorMessage = "Connection failed. Gmail SMTP may be blocking Netlify.";
+    }
+
+    return {
+      success: false,
+      message: errorMessage,
+    };
   }
-
-  return {
-    success: false,
-    message: errorMessage,
-  };
-}
 
 }
