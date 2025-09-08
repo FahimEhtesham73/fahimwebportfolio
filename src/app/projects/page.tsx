@@ -9,7 +9,7 @@ export const projectsData: Project[] = [
     title: 'Courier & Parcel Management System',
     description: 'A comprehensive system for managing courier and parcel deliveries, featuring real-time tracking, user authentication, and admin dashboards.',
     longDescription: 'The Courier & Parcel Management System is a robust web application designed to streamline the process of managing courier and parcel deliveries. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), it offers features such as user authentication, real-time tracking of parcels, and an admin dashboard for managing deliveries and users. The system allows customers to create accounts, place delivery requests, and track their parcels in real-time. Admins can manage delivery personnel, view analytics, and handle customer inquiries. The application is deployed on AWS EC2 to ensure scalability and reliability.',
-    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757304658011',
+    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757310965691',
     screenshots: [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-57-25.png?updatedAt=1757304166722',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-03-59.png?updatedAt=1757304439489',
