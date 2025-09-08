@@ -5,6 +5,31 @@ import ProjectCard, { type Project } from '@/components/shared/ProjectCard';
 // Moved projectsData outside the component and exported it
 export const projectsData: Project[] = [
   {
+    slug: 'courier-parcel-management-system',
+    title: 'Courier & Parcel Management System',
+    description: 'A comprehensive system for managing courier and parcel deliveries, featuring real-time tracking, user authentication, and admin dashboards.',
+    longDescription: 'The Courier & Parcel Management System is a robust web application designed to streamline the process of managing courier and parcel deliveries. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), it offers features such as user authentication, real-time tracking of parcels, and an admin dashboard for managing deliveries and users. The system allows customers to create accounts, place delivery requests, and track their parcels in real-time. Admins can manage delivery personnel, view analytics, and handle customer inquiries. The application is deployed on AWS EC2 to ensure scalability and reliability.',
+    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757304658011',
+    screenshots: [
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-57-25.png?updatedAt=1757304166722',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-03-59.png?updatedAt=1757304439489',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-05-02.png?updatedAt=1757304439022',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-06-26.png?updatedAt=1757304438936',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-06-36.png?updatedAt=1757304438649',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-06-48.png?updatedAt=1757304438768',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-58-38.png?updatedAt=1757304166729',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-59-44.png?updatedAt=1757304166789',
+      "https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757304658011",
+      "https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-59-09.png?updatedAt=1757304166670",
+
+
+    ],
+    imageHint: 'online marketplace',
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT Authentication'],
+    githubUrl: 'https://github.com/FahimEhtesham73/Courier-Parcel-Management-System.git',
+    liveUrl: 'https://ecommerce.fahimehtesham.com', // Placeholder - replace with actual link
+  },
+  {
     slug: 'draw-board-application',
     title: 'Draw Board Application',
     description: 'A collaborative whiteboarding tool for real-time sketching and idea sharing. Built with the MERN stack, enabling seamless teamwork.',
@@ -43,11 +68,11 @@ export const projectsData: Project[] = [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/officeportal/l.png?updatedAt=1748247919807',
     ],
     imageHint: 'office dashboard UI', // For main card image
-    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'AWS Lambda'],
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
     githubUrl: 'https://github.com/FahimEhtesham73/office-portal', // Replace with actual repo link
     liveUrl: 'https://officeportal.fahimehtesham.com', // Placeholder - replace with actual link
   },
-   {
+  {
     slug: 'next-gari',
     title: 'Next Gari',
     description: 'A Next.js-based e-commerce platform for buying and selling used cars, featuring advanced search filters and user-friendly interfaces.',
@@ -58,7 +83,7 @@ export const projectsData: Project[] = [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-37.png?updatedAt=1748259382448',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-09.png?updatedAt=1748259381191',
 
-     ' https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-45.png?updatedAt=1748259381155',
+      ' https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-45.png?updatedAt=1748259381155',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-20.png?updatedAt=1748259381375',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-16.png?updatedAt=1748259381690',
 
@@ -68,7 +93,7 @@ export const projectsData: Project[] = [
     techStack: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     githubUrl: 'https://github.com/FahimEhtesham73/next-gari',
     liveUrl: 'https://nextgari.fahimehtesham.com', // Placeholder - replace with actual link
-    },
+  },
   {
     slug: 'rnd_portal',
     title: 'R&D Portal',
@@ -92,7 +117,6 @@ export const projectsData: Project[] = [
     githubUrl: ' https://github.com/FahimEhtesham73/office-portal',
     liveUrl: 'https://rnp.fahimehtesham.com',
   },
-
   {
     slug: 'job-portal',
     title: 'Job Portal',
@@ -104,7 +128,7 @@ export const projectsData: Project[] = [
       'https://placehold.co/800x500.png',
     ],
     imageHint: 'job search',
-    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux', 'AWS EC2'],
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux'],
     githubUrl: 'https://github.com/FahimEhtesham73/job-portal',
     liveUrl: 'https://jobs.fahimehtesham.com', // Placeholder - replace with actual link
   },
@@ -124,24 +148,11 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/FahimEhtesham73/employee-evaluation',
     // No liveUrl, as it's likely an internal tool
   },
-  {
-    slug: 'multi-vendor-e-commerce-site',
-    title: 'Multi-Vendor E-commerce Site',
-    description: 'A feature-rich multi-vendor e-commerce website, enabling sellers to list and manage products. Focused on scalability and AI integration.',
-    longDescription: 'This Multi-Vendor E-commerce Site provides a robust platform for multiple sellers to create their storefronts, list products, manage inventory, and process orders. The system is designed for scalability, leveraging AWS services like Lambda for serverless functions. A key feature is the integration of AI models for tasks such as product recommendations and personalized user experiences. The platform includes comprehensive dashboards for vendors and administrators, secure payment gateway integration, and a user-friendly shopping experience for customers. Built with the MERN stack, it offers a modern, responsive design suitable for a wide range of products and vendors.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    screenshots: [
-      'https://placehold.co/800x500.png',
-      'https://placehold.co/800x500.png',
-    ],
-    imageHint: 'online marketplace',
-    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'AWS Lambda', 'AI Integration'],
-    githubUrl: 'https://github.com/FahimEhtesham73/multi-vendor-ecommerce',
-    liveUrl: 'https://ecommerce.fahimehtesham.com', // Placeholder - replace with actual link
-  },
+
 ];
 
 export default function ProjectsPage() {
+  console.log('Projects Data:', projectsData);
   return (
     <SectionWrapper>
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary animate-fadeInUp">My Work</h1>

@@ -12,17 +12,16 @@ import { notFound } from 'next/navigation';
 
 // Helper function to generate AI hints for screenshots
 function getScreenshotHint(projectTitle: string): string {
-  // Get the first word of the project title, make it lowercase
   const firstWord = (projectTitle.split(' ')[0] || 'project').toLowerCase();
-  // Sanitize it to be a single keyword by removing non-alphanumeric characters
   const keyword = firstWord.replace(/[^a-z0-9]/gi, '');
-  // Return a two-word hint
   return `${keyword} interface`;
 }
 
-
-export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
-  const project = projectsData.find(p => p.slug === params.slug);
+// Make the component async
+export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
+  // For some Next.js versions, you might need to use this pattern instead:
+  const slug = (await params).slug;
+  const project = projectsData.find(p => p.slug === slug);
 
   if (!project) {
     notFound();
@@ -30,14 +29,14 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
   return (
     <SectionWrapper>
-      <div className="max-w-5xl mx-auto"> {/* Changed from max-w-4xl to max-w-5xl */}
-        <Link href="/projects" className="inline-flex items-center text-sm text-primary hover:underline mb-8 animate-fadeInUp">
+      <div className="max-w-5xl mx-auto">
+        <Link href="/projects" className="inline-flex items-center text-sm text-primary hover:underline mb-8">
           &larr; Back to Projects
         </Link>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 animate-fadeInUp animation-delay-100">{project.title}</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">{project.title}</h1>
         
-        <div className="mb-8 animate-fadeInUp animation-delay-200">
+        <div className="mb-8">
           <div className="flex flex-wrap gap-2">
             {project.techStack.map(tech => (
               <Badge key={tech} variant="secondary" className="bg-primary/10 text-primary border-primary/30 text-sm">
@@ -48,7 +47,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         </div>
 
         <div className="grid md:grid-cols-5 gap-8 mb-12">
-          <div className="md:col-span-3 animate-fadeInUp animation-delay-300">
+          <div className="md:col-span-3">
             {project.screenshots && project.screenshots.length > 0 ? (
               <Card className="overflow-hidden shadow-xl bg-card/80 backdrop-blur-sm">
                 <Carousel
@@ -61,13 +60,13 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                   <CarouselContent>
                     {project.screenshots.map((screenshotUrl, index) => (
                       <CarouselItem key={index}>
-                        <div className="aspect-[4/3] relative"> {/* Changed from aspect-video to aspect-[4/3] */}
+                        <div className="aspect-[4/3] relative">
                           <Image
                             src={screenshotUrl}
                             alt={`${project.title} - Screenshot ${index + 1}`}
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 50vw"
-                            className="object-contain rounded-md" // Changed from object-cover to object-contain
+                            className="object-contain rounded-md"
                             data-ai-hint={getScreenshotHint(project.title)}
                             priority={index === 0} 
                           />
@@ -84,18 +83,18 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                 </Carousel>
               </Card>
             ) : (
-              <div className="aspect-[4/3] relative bg-muted rounded-lg flex items-center justify-center"> {/* Changed from aspect-video */}
+              <div className="aspect-[4/3] relative bg-muted rounded-lg flex items-center justify-center">
                 <p className="text-foreground/50">No screenshots available.</p>
               </div>
             )}
           </div>
 
-          <div className="md:col-span-2 space-y-6 animate-fadeInUp animation-delay-400">
+          <div className="md:col-span-2 space-y-6">
             <Card className="bg-card/80 backdrop-blur-sm shadow-lg">
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold text-primary/90 mb-3">About this project</h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  {project.description} {/* Short description here */}
+                  {project.description}
                 </p>
                  {project.githubUrl && (
                   <Button asChild variant="outline" size="sm" className="w-full mt-6 hover:bg-primary/10 hover:text-primary">
@@ -116,17 +115,15 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           </div>
         </div>
         
-        <div className="prose prose-invert max-w-none animate-fadeInUp animation-delay-500">
+        <div className="prose prose-invert max-w-none">
           <h2 className="text-3xl font-semibold text-primary/90 mb-4">Project Overview</h2>
           <div className="text-foreground/80 leading-relaxed space-y-4 text-lg" dangerouslySetInnerHTML={{ __html: project.longDescription.replace(/\n/g, '<br />') }} />
         </div>
-
       </div>
     </SectionWrapper>
   );
 }
 
-// Generate static paths for all projects
 export async function generateStaticParams() {
   return projectsData.map(project => ({
     slug: project.slug,
