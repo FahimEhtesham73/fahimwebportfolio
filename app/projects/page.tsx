@@ -32,8 +32,8 @@ export const projectsData: Project[] = [
   {
     slug: 'draw-board-application',
     title: 'Draw Board Application',
-    description: 'A collaborative whiteboarding tool for real-time sketching and idea sharing. Built with the MERN stack, enabling seamless teamwork.',
-    longDescription: 'The Draw Board Application is a dynamic, real-time collaborative platform designed to mimic the experience of a physical whiteboard in a digital environment. Developed using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.IO for real-time communication, it allows multiple users to simultaneously draw, write, and share ideas. Key features include a variety of drawing tools (pen, eraser, shapes), text input capabilities, color selection, and the ability to save and load whiteboard sessions. This project emphasizes low-latency interactions and a user-friendly interface to foster effective remote teamwork and brainstorming sessions.',
+    description: 'A collaborative drawboarding tool for real-time sketching and idea sharing. Built with the MERN stack, enabling seamless teamwork.',
+    longDescription: 'The Draw Board Application is a dynamic, real-time collaborative platform designed to mimic the experience of a physical drawboard in a digital environment. Developed using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.IO for real-time communication, it allows multiple users to simultaneously draw, write, and share ideas. Key features include a variety of drawing tools (pen, eraser, shapes), text input capabilities, color selection, and the ability to save and load drawboard sessions. This project emphasizes low-latency interactions and a user-friendly interface to foster effective remote teamwork and brainstorming sessions.',
     imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/d.png?updatedAt=1748247784981',
     screenshots: [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/a.png?updatedAt=1748247783990',
@@ -48,10 +48,10 @@ export const projectsData: Project[] = [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/g.png?updatedAt=1748247785346',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/drawapp/h.png?updatedAt=1748247784699',
     ],
-    imageHint: 'digital whiteboard', // For main card image
+    imageHint: 'digital drawboard', // For main card image
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO'],
-    githubUrl: 'https://github.com/FahimEhtesham73/whiteboard-application',
-    liveUrl: 'https://whiteboard.fahimehtesham.com', // Placeholder - replace with actual link
+    githubUrl: 'https://github.com/FahimEhtesham73/drawboard-application',
+    liveUrl: 'https://drawboard.fahimehtesham.com', // Placeholder - replace with actual link
   },
   {
     slug: 'office-portal',
