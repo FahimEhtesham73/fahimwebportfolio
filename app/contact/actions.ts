@@ -47,7 +47,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
     // Email to you (receiving the contact form submission)
     const mailOptions = {
       from: `"Portfolio Contact Form" <${process.env.EMAIL_USER || 'fahimEhtesham73@gmail.com'}>`,
-      to: 'fahimEhtesham73@gmail.com', // Your email where you want to receive messages
+      to: 'ehtesamulhaque32@gmail.com', // Changed recipient
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: `
@@ -120,7 +120,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
     // Send both emails
     await transporter.sendMail(mailOptions);
     await transporter.sendMail(autoReplyOptions);
-    
+
     return {
       success: true,
       message: "Your message has been sent successfully! You should receive a confirmation email shortly.",
