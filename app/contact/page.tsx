@@ -131,7 +131,7 @@ export default function ContactPage() {
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <a href="mailto:fahimEhtesham73@gmail.com" className="text-foreground/80 hover:text-primary transition-colors">fahimEhtesham73@gmail.com</a>
+                <a href="mailto:fahim123ehtesham@gmail.com" className="text-foreground/80 hover:text-primary transition-colors">fahim123ehtesham@gmail.com</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />

@@ -56,7 +56,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
 
     // Email to you (receiving the contact form submission)
     const mailOptions = {
-      from: `"Portfolio Contact Form" <${process.env.EMAIL_USER || 'fahimEhtesham73@gmail.com'}>`,
+      from: `"Portfolio Contact Form" <${process.env.EMAIL_USER || 'fahim123ehtesham@gmail.com'}>`,
       to: 'ehtesamulhaque32@gmail.com', // Changed recipient
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
@@ -86,7 +86,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
 
     // Auto-reply email to the sender
     const autoReplyOptions = {
-      from: `"MD. Ehtesamul Haque Fahim" <${process.env.EMAIL_USER || 'fahimEhtesham73@gmail.com'}>`,
+      from: `"MD. Ehtesamul Haque Fahim" <${process.env.EMAIL_USER || 'fahim123ehtesham@gmail.com'}>`,
       to: email,
       subject: 'Thank you for contacting me!',
       html: `
@@ -111,7 +111,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
           <div style="margin: 20px 0;">
             <p style="margin: 5px 0;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/md-ehtesamul-haque-fahim-7354301a5" style="color: #40E0D0;">MD. Ehtesamul Haque Fahim</a></p>
             <p style="margin: 5px 0;"><strong>GitHub:</strong> <a href="https://github.com/FahimEhtesham73" style="color: #40E0D0;">FahimEhtesham73</a></p>
-            <p style="margin: 5px 0;"><strong>Email:</strong> <a href="mailto:fahimEhtesham73@gmail.com" style="color: #40E0D0;">fahimEhtesham73@gmail.com</a></p>
+            <p style="margin: 5px 0;"><strong>Email:</strong> <a href="mailto:fahim123ehtesham@gmail.com" style="color: #40E0D0;">fahim123ehtesham@gmail.com</a></p>
           </div>
           
           <p style="color: #555; line-height: 1.6;">
