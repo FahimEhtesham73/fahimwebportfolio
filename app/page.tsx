@@ -65,6 +65,8 @@ export default function HomePage() {
             priority
           />
 
+
+
           <p className="text-2xl md:text-3xl text-neon-glow mb-1 animate-fadeInUp animation-delay-200">
             Hello, I&apos;m
           </p>
