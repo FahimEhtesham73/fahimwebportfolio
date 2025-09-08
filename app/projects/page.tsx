@@ -11,7 +11,7 @@ export const projectsData: Project[] = [
     longDescription: 'The Courier & Parcel Management System is a robust web application designed to streamline the process of managing courier and parcel deliveries. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), it offers features such as user authentication, real-time tracking of parcels, and an admin dashboard for managing deliveries and users. The system allows customers to create accounts, place delivery requests, and track their parcels in real-time. Admins can manage delivery personnel, view analytics, and handle customer inquiries. The application is deployed on AWS EC2 to ensure scalability and reliability.',
     imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757304658011',
     screenshots: [
-      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-57-25.png?updatedAt=1757304166722',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757310965691',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-03-59.png?updatedAt=1757304439489',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-05-02.png?updatedAt=1757304439022',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-06-26.png?updatedAt=1757304438936',
@@ -19,12 +19,12 @@ export const projectsData: Project[] = [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2010-06-48.png?updatedAt=1757304438768',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-58-38.png?updatedAt=1757304166729',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-59-44.png?updatedAt=1757304166789',
-      "https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757304658011",
-      "https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-59-09.png?updatedAt=1757304166670",
-
-
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/image.png?updatedAt=1757304658011',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/Screenshot%20from%202025-09-08%2009-59-09.png?updatedAt=1757304166670',
+      
+      
     ],
-    imageHint: 'online marketplace',
+    imageHint: 'online courier service', // For main card image
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT Authentication'],
     githubUrl: 'https://github.com/FahimEhtesham73/Courier-Parcel-Management-System.git',
     liveUrl: 'https://ecommerce.fahimehtesham.com', // Placeholder - replace with actual link
@@ -50,7 +50,7 @@ export const projectsData: Project[] = [
     ],
     imageHint: 'digital drawboard', // For main card image
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO'],
-    githubUrl: 'https://github.com/FahimEhtesham73/drawboard-application',
+    githubUrl: 'https://github.com/FahimEhtesham73/DrawBoardApplication.git',
     liveUrl: 'https://drawboard.fahimehtesham.com', // Placeholder - replace with actual link
   },
   {
@@ -69,7 +69,7 @@ export const projectsData: Project[] = [
     ],
     imageHint: 'office dashboard UI', // For main card image
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-    githubUrl: 'https://github.com/FahimEhtesham73/office-portal', // Replace with actual repo link
+    githubUrl: 'https://github.com/FahimEhtesham73/OfficePortal.git', // Replace with actual repo link
     liveUrl: 'https://officeportal.fahimehtesham.com', // Placeholder - replace with actual link
   },
   {
@@ -82,11 +82,9 @@ export const projectsData: Project[] = [
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-33.png?updatedAt=1748259387232',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-37.png?updatedAt=1748259382448',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-09.png?updatedAt=1748259381191',
-
-      ' https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-45.png?updatedAt=1748259381155',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-33-45.png?updatedAt=1748259381155',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-20.png?updatedAt=1748259381375',
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-16.png?updatedAt=1748259381690',
-
       'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/car/Screenshot%20from%202025-05-26%2017-34-28.png?updatedAt=1748259381487',
     ],
     imageHint: 'used car marketplace',
@@ -114,31 +112,33 @@ export const projectsData: Project[] = [
     ],
     imageHint: 'research and development dashboard',
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT Authentication'],
-    githubUrl: ' https://github.com/FahimEhtesham73/office-portal',
+    githubUrl: 'https://github.com/FahimEhtesham73/RND_Portal.git',
     liveUrl: 'https://rnp.fahimehtesham.com',
   },
+
+
 
   {
     slug: 'employee-evaluation-system',
     title: 'Employee Evaluation System',
     description: 'An Job Portal module for managing employee evaluations, tracking performance metrics, and facilitating constructive feedback.',
     longDescription: 'The Employee Evaluation System is an integral module of a larger Job Portal, designed to streamline and digitize the performance review process. It allows managers to set evaluation criteria, conduct periodic reviews, provide feedback, and track employee performance over time. Employees can view their evaluations, submit self-assessments, and engage in a transparent review cycle. The system uses JWT for secure authentication and is built upon the MERN stack, ensuring data integrity and a user-friendly interface for both managers and employees. This tool aims to improve HR efficiency and foster a culture of continuous improvement.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/ee.jpeg?updatedAt=1757312573313',
     screenshots: [
-      'https://placehold.co/800x500.png',
-      'https://placehold.co/800x500.png',
-      'https://placehold.co/800x500.png',
+      'https://ik.imagekit.io/wmmxbuuwz/portfolioFahim/courier&Parcel/ee.jpeg?updatedAt=1757312573313',
+   
     ],
     imageHint: 'performance review',
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT Authentication'],
-    githubUrl: 'https://github.com/FahimEhtesham73/employee-evaluation',
+    githubUrl: 'https://github.com/FahimEhtesham73/employee-evaluation.git',
     // No liveUrl, as it's likely an internal tool
   },
-
+  
 ];
 
 export default function ProjectsPage() {
-  console.log('Projects Data:', projectsData);
+  console.log('Projects Data:', projectsData); // Debugging line to check data
+  
   return (
     <SectionWrapper>
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary animate-fadeInUp">My Work</h1>
