@@ -57,7 +57,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
     // Email to you (receiving the contact form submission)
     const mailOptions = {
       from: `"Portfolio Contact Form" <${process.env.EMAIL_USER || 'fahim123ehtesham@gmail.com'}>`,
-      to: 'ehtesamulhaque32@gmail.com', // Changed recipient
+      to: 'fahim123ehtesham@gmail.com', // Changed recipient
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: `
