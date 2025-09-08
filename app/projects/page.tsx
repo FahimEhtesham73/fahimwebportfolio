@@ -117,21 +117,7 @@ export const projectsData: Project[] = [
     githubUrl: ' https://github.com/FahimEhtesham73/office-portal',
     liveUrl: 'https://rnp.fahimehtesham.com',
   },
-  {
-    slug: 'job-portal',
-    title: 'Job Portal',
-    description: 'A comprehensive platform connecting job seekers with employers, featuring robust job listings, application tracking, and user profile management.',
-    longDescription: 'This Job Portal is a full-featured web application built to bridge the gap between job seekers and employers. It offers a comprehensive suite of tools for both parties. Job seekers can create profiles, upload resumes, search for jobs using various filters (location, industry, job type), apply for positions, and track their application status. Employers can post job openings, manage applications, search for candidates, and communicate with applicants. The platform is built with the MERN stack and deployed on AWS EC2 for scalability and reliability, ensuring a smooth experience even with a large number of listings and users.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    screenshots: [
-      'https://placehold.co/800x500.png',
-      'https://placehold.co/800x500.png',
-    ],
-    imageHint: 'job search',
-    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux'],
-    githubUrl: 'https://github.com/FahimEhtesham73/job-portal',
-    liveUrl: 'https://jobs.fahimehtesham.com', // Placeholder - replace with actual link
-  },
+
   {
     slug: 'employee-evaluation-system',
     title: 'Employee Evaluation System',
