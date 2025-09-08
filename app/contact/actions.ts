@@ -40,6 +40,10 @@ export async function submitContactForm(data: ContactFormValues): Promise<Submit
 
 
   try {
+     console.log("Environment Variables:", {
+      EMAIL_USER: process.env.EMAIL_USER ? "Set" : "Missing",
+      EMAIL_APP_PASSWORD: process.env.EMAIL_APP_PASSWORD ? "Set" : "Missing",
+    });
     // Create transporter using Gmail SMTP
     const transporter = nodemailer.createTransport({
       service: 'gmail',
